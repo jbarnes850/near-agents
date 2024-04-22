@@ -1,4 +1,4 @@
-export const GITHUB_URL = "https://github.com/run-llama/chat-llamaindex";
+export const GITHUB_URL = "https://github.com/jbarnes850/near-agents";
 
 export enum Path {
   Home = "/",

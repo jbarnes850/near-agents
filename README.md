@@ -1,32 +1,32 @@
 <br /><br />
 
 <p align="center">
-  <img src="./public/android-chrome-192x192.png" alt="LlamaIndex Chat Logo" width="70">
+  <img src="./public/android-chrome-192x192.png" alt="NEAR AgentHub Logo" width="70">
 </p>
 
-<h3 align="center"><b>LlamaIndex Chat</b></h3>
-<p align="center"><b>Create chat bots that know your data</b></p>
+<h3 align="center"><b>NEAR AgentHub</b></h3>
+<p align="center"><b>Create and deploy agents using LLMs in the NEAR ecosystem</b></p>
 
 <p>
       <img
         src="./public/screenshot.png"
-        alt="LlamaIndex Chat Screen"
+        alt="NEAR AgentHub Interface"
         width="100%"
       />
 </p>
 
-Welcome to [LlamaIndex Chat](https://github.com/run-llama/chat-llamaindex). You can create and share LLM chatbots that know your data (PDF or text documents).
+Welcome to [NEAR AgentHub](https://github.com/run-llama/agenthub-near). This platform allows developers to create, share, and deploy LLM-based agents specifically designed for the NEAR blockchain ecosystem.
 
-Getting started with LlamaIndex Chat is a breeze. Visit https://chat-llamaindex.vercel.app - a hosted version of LlamaIndex Chat with no user authentication that provides an immediate start.
+Getting started with NEAR AgentHub is straightforward. Visit https://agenthub-near.vercel.app - a hosted version of NEAR AgentHub with no user authentication required for an immediate start.
 
 ## 🚀 Features
 
-LlamaIndex Chat is an example chatbot application for [LlamaIndexTS](https://github.com/run-llama/LlamaIndexTS).
+NEAR AgentHub is a specialized application for creating blockchain-oriented agents using [NEARIndexTS](https://github.com/run-llama/NEARIndexTS).
 You can:
 
-- Create bots using prompt engineering and share them with other users.
-- Modify the demo bots by using the UI or directly editing the [./app/bots/bot.data.ts](./app/bots/bot.data.ts) file.
-- Integrate your data by uploading documents or generating new [data sources](#📀-data-sources).
+- Design agents using prompt engineering and share them with the NEAR community.
+- Modify existing agents through the UI or by directly editing the [./app/agents/agent.data.ts](./app/agents/agent.data.ts) file.
+- Integrate blockchain data by connecting to NEAR nodes or using predefined [data sources](#📀-data-sources).
 
 ## ⚡️ Quick start
 
@@ -52,8 +52,8 @@ Edit environment variables in `.env.development.local`.
 - Run the dev server
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 ### 🐳 Docker

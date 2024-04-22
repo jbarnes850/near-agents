@@ -13,12 +13,12 @@ export const DEMO_BOTS: DemoBot[] = [
   {
     id: "1",
     avatar: "1f916",
-    name: "GPT-4 Vision Preview",
+    name: "GPT-4 Turbo",
     botHello: "Hello! How can I assist you today?",
     context: [],
     modelConfig: {
-      model: "gpt-4-vision-preview",
-      temperature: 0.3,
+      model: "gpt-4-turbo",
+      temperature: 0.7,
       maxTokens: 4096,
       sendMemory: false,
     },
@@ -29,10 +29,11 @@ export const DEMO_BOTS: DemoBot[] = [
     id: "2",
     avatar: "1f916",
     name: "My Documents",
-    botHello: "Hello! How can I assist you today?",
+    botHello:
+      "Hello! How can I assist you today? Feel free to upload your documents!",
     context: [],
     modelConfig: {
-      model: "gpt-4-1106-preview",
+      model: "gpt-4-turbo",
       temperature: 0.5,
       maxTokens: 4096,
       sendMemory: true,
@@ -43,64 +44,23 @@ export const DEMO_BOTS: DemoBot[] = [
   {
     id: "3",
     avatar: "1f5a5-fe0f",
-    name: "Red Hat Linux Expert",
-    botHello: "Hello! How can I help you with Red Hat Linux?",
+    name: "NEAR Founder Copilot",
+    botHello:
+      "Hello! I'm the NEAR Founder Copilot, how can I help you get started on NEAR?",
     context: [
       {
         role: "system",
-        content: TEMPLATE("Red Hat Linux Expert"),
+        content: TEMPLATE("NEAR Blockchain Expert"),
       },
     ],
     modelConfig: {
-      model: "gpt-4-1106-preview",
-      temperature: 0.1,
+      model: "gpt-4-turbo",
+      temperature: 0.8,
       maxTokens: 4096,
       sendMemory: true,
     },
     readOnly: true,
-    datasource: "redhat",
-    hideContext: false,
-  },
-  {
-    id: "4",
-    avatar: "1f454",
-    name: "Apple Watch Genius",
-    botHello: "Hello! How can I help you with Apple Watches?",
-    context: [
-      {
-        role: "system",
-        content: TEMPLATE("Apple Genius specialized in Apple Watches"),
-      },
-    ],
-    modelConfig: {
-      model: "gpt-4-1106-preview",
-      temperature: 0.1,
-      maxTokens: 4096,
-      sendMemory: true,
-    },
-    readOnly: true,
-    datasource: "watchos",
-    hideContext: false,
-  },
-  {
-    id: "5",
-    avatar: "1f4da",
-    name: "German Basic Law Expert",
-    botHello: "Hello! How can I assist you today?",
-    context: [
-      {
-        role: "system",
-        content: TEMPLATE("Lawyer specialized in the basic law of Germany"),
-      },
-    ],
-    modelConfig: {
-      model: "gpt-4-1106-preview",
-      temperature: 0.1,
-      maxTokens: 4096,
-      sendMemory: true,
-    },
-    readOnly: true,
-    datasource: "basic_law_germany",
+    datasource: "near",
     hideContext: false,
   },
 ];
@@ -121,7 +81,7 @@ export const createEmptyBot = (): Bot => ({
   name: Locale.Store.DefaultBotName,
   context: [],
   modelConfig: {
-    model: "gpt-4-1106-preview" as ModelType,
+    model: "gpt-4-turbo" as ModelType,
     temperature: 0.5,
     maxTokens: 4096,
     sendMemory: true,
