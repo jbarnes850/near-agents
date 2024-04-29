@@ -25,7 +25,7 @@ NEAR AgentHub is a specialized application for creating blockchain-oriented agen
 You can:
 
 - Design agents using prompt engineering and share them with the NEAR community.
-- Modify existing agents through the UI or by directly editing the [./app/agents/agent.data.ts](./app/agents/agent.data.ts) file.
+- Modify existing agents through the UI or by directly editing the [./app/bots/bot.data.ts](./app/bots/bot.data.ts) file.
 - Integrate blockchain data by connecting to NEAR nodes or using predefined [data sources](#📀-data-sources).
 
 ## ⚡️ Quick start

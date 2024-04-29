@@ -12,37 +12,6 @@ type DemoBot = Omit<Bot, "session">;
 export const DEMO_BOTS: DemoBot[] = [
   {
     id: "1",
-    avatar: "1f916",
-    name: "GPT-4 Turbo",
-    botHello: "Hello! How can I assist you today?",
-    context: [],
-    modelConfig: {
-      model: "gpt-4-turbo",
-      temperature: 0.7,
-      maxTokens: 4096,
-      sendMemory: false,
-    },
-    readOnly: true,
-    hideContext: false,
-  },
-  {
-    id: "2",
-    avatar: "1f916",
-    name: "My Documents",
-    botHello:
-      "Hello! How can I assist you today? Feel free to upload your documents!",
-    context: [],
-    modelConfig: {
-      model: "gpt-4-turbo",
-      temperature: 0.5,
-      maxTokens: 4096,
-      sendMemory: true,
-    },
-    readOnly: true,
-    hideContext: false,
-  },
-  {
-    id: "3",
     avatar: "1f5a5-fe0f",
     name: "NEAR Founder Copilot",
     botHello:
@@ -64,7 +33,7 @@ export const DEMO_BOTS: DemoBot[] = [
     hideContext: false,
   },
   {
-    id: "4",
+    id: "2",
     avatar: "1f4b0",
     name: "Investor Sourcing Bot",
     botHello:
@@ -77,8 +46,24 @@ export const DEMO_BOTS: DemoBot[] = [
       sendMemory: true,
     },
     readOnly: true,
-    hideContext: false,
     datasource: "investor_database",
+    hideContext: false,
+  },
+  {
+    id: "3",
+    avatar: "1f916",
+    name: "My Documents",
+    botHello:
+      "Hello! How can I assist you today? Feel free to upload your documents!",
+    context: [],
+    modelConfig: {
+      model: "gpt-4-turbo",
+      temperature: 0.5,
+      maxTokens: 4096,
+      sendMemory: true,
+    },
+    readOnly: true,
+    hideContext: false,
   },
 ];
 
