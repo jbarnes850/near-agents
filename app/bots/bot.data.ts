@@ -63,6 +63,23 @@ export const DEMO_BOTS: DemoBot[] = [
     datasource: "near",
     hideContext: false,
   },
+  {
+    id: "4",
+    avatar: "1f4b0",
+    name: "Investor Sourcing Bot",
+    botHello:
+      "Hello! I can help you identify the ideal investors for your project. Let's get started!",
+    context: [],
+    modelConfig: {
+      model: "gpt-4-turbo",
+      temperature: 0.6,
+      maxTokens: 4096,
+      sendMemory: true,
+    },
+    readOnly: true,
+    hideContext: false,
+    datasource: "investor_database",
+  },
 ];
 
 export const createDemoBots = (): Record<string, Bot> => {
